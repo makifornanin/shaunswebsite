@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaun Website</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./lpage.css">
+    
+</head>
+<body>
+    <nav class="navbar">
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <div class="navlinks" id="navdrop">
+        <ul>
+            <li><a class="active" href="./lpage.html">Home</a></li>
+            <li><a class="active" href="./listings.html">Properties</a></li>
+            <li><a class="active" href="./contact.html">Message Me</a></li>
+        </ul>
+        </div>
+        <div class="n">
+           <div class="logo-text">ROCKWELL</div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="vid">
+            <video autoplay muted loop class="background-video">
+            <source src="./assets/rockwell.mp4" type="video/mp4">
+            </video>
+        
+
+        <div class="overlay"></div>
+
+        <div class="tits"><h1>ROCKWELL</h1></div>
+        </div>
+    </section>
+
+    <section class="first">
+        <div class="fp">
+            <h1>Guiding your path to a new home in Rockwell</h1>
+            <p>Discover premuim properties tailored to your lifestyle. Let us help you find the perfect space in the heart of Rockwell</p>
+        </div>
+
+        <div class="custom-carousel">
+        <div class="carousel-track">
+            <img src="assets/vantage.png" alt="Slide 1">
+            <img src="assets/arton.png" alt="Slide 2">
+            <img src="assets/east.png" alt="Slide 3">
+            <img src="assets/farm.png" alt="Slide 4">
+            <img src="assets/center.png" alt="Slide 5">
+        </div>
+        <button class="carousel-btn left" onclick="prevSlide()">&lt;</button>
+        <button class="carousel-btn right" onclick="nextSlide()">&gt;</button>
+        </div>
+        <!-- Mobile Horizontal Scroll (hidden on PC) -->
+        <div class="mobile-slideshow">
+        <img id="mobile-slide" src="./assets/v.png" alt="Slideshow Image">
+        </div>
+
+    </section>
+
+    <section class="second">
+        <h1>Explore our Property Listings</h1>
+        <p>Find the perfect harmony of elegance, comfort, and prime location in every Rockwell property</p>
+
+       <div class="property-scroll-wrapper">
+        <div class="property-track" id="property-track">
+            <div class="property-card">
+            <div class="property-image"></div>
+            <h4>The Arabelle Residences</h4>
+            <p>Rockwell, Makati</p>
+            </div>
+            <div class="property-card">
+            <div class="property-image"></div>
+            <h4>Luna Vista</h4>
+            <p>Rockwell, Makati</p>
+            </div>
+            <div class="property-card">
+            <div class="property-image"></div>
+            <h4>Veranda Heights</h4>
+            <p>Rockwell, Makati</p>
+            </div>
+            <div class="property-card">
+            <div class="property-image"></div>
+            <h4>Skyline Tower</h4>
+            <p>Rockwell, Makati</p>
+            </div>
+            <div class="property-card">
+            <div class="property-image"></div>
+            <h4>Maple Residences</h4>
+            <p>Rockwell, Makati</p>
+            </div>
+            <div class="property-card">
+            <div class="property-image"></div>
+            <h4>Parklane View</h4>
+            <p>Rockwell, Makati</p>
+            </div>
+             <div class="property-card">
+            <div class="property-image"></div>
+            <h4>Parklane View</h4>
+            <p>Rockwell, Makati</p>
+            </div>
+             <div class="property-card">
+            <div class="property-image"></div>
+            <h4>Parklane View</h4>
+            <p>Rockwell, Makati</p>
+            </div>
+        </div>
+
+        <div class="see-all-container">
+            <button class="see-all-btn">See All Property →</button>
+        </div>
+        </div>
+
+
+
+    </section>
+
+    <div class="line"></div>
+
+    <section class="last">
+        <div class="conti">
+            <div class="f">
+                <h1>Hi, I'm Shaun Ng</h1>
+                <p>I help clients find exceptional condos in Rockwell Makati. One of the city's most sought-after communities. If your looking for a stylish, secure, and well-located home or investment, I'm here to assist every step of the way.</p>
+                <button class="btn">Book an Appointment</button>
+            </div>
+            <div class="s">
+                <img src="./assets/shaun.png" alt="Shaun Ng" class="shaun-img">
+            </div>    
+        </div>
+    </section>
+
+    <footer>
+        <div class="txt">ROCKWELL</div>
+        <button class="footer-btn"><i class="fas fa-lock"></i></button> <!--icon here for shaun to access admin page-->
+    </footer>
+
+    <script src="./JS/lpage.js"></script>
+</body>
+</html>

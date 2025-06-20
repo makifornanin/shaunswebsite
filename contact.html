@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaun Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./contact.css">
+</head>
+<body>
+    <nav class="navbar">
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <div class="navlinks" id="navdrop">
+        <ul>
+            <li><a class="active" href="./lpage.html">Home</a></li>
+            <li><a class="active" href="./listings.html">Properties</a></li>
+            <li><a class="active" href="./contact.html">Message Me</a></li>
+        </ul>
+        </div>
+        <div class="n">
+           <div class="logo-text">ROCKWELL</div>
+        </div>
+    </nav>
+
+    <section class="mess">
+        <div class="cunti">
+            <div class="fp">
+                <img src="./assets/painting.png" alt="painting">
+                <div class="contact-item">
+                <span class="icons"><i class="fa-solid fa-phone"></i></span>
+                <span class="text">+63 823 942 0123</span>
+                </div>
+                <div class="spacer"></div>
+                <div class="contact-item">
+                <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                <span class="text">ShaungNg@gmail.com</span>
+                </div>
+            </div>
+
+            <div class="sp">
+                <h2>Still haven't found what you're looking for?</h2>
+                <div class="contact-form">
+                <form action="https://formsubmit.co/YOUR_EMAIL@gmail.com" method="POST">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5"></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faqs">
+        <div class="kunt">
+            <div class="fir">
+                <h1>Frequently Asked Questions</h1>
+                <p>Whether youre a first-time buyer or a seasoned investor, our FAQ section is designed to guide you through the essentials of owning a Rockwell property, helping you move forward with confidence and peace of mind</p>
+            </div>
+            <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-header">
+                <span>What services do you offer?</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9" />
+                </svg>
+                </div>
+                <div class="accordion-content">
+                We offer web design, automation setup, and social media management.
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                <span>How long does a project take?</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9" />
+                </svg>
+                </div>
+                <div class="accordion-content">
+                It usually takes 2–4 weeks depending on requirements and revisions.
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                <span>Do you provide support after launch?</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9" />
+                </svg>
+                </div>
+                <div class="accordion-content">
+                Yes, we provide post-launch support and maintenance plans.
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                <span>Is content creation included?</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9" />
+                </svg>
+                </div>
+                <div class="accordion-content">
+                We can help with content, but custom writing or media may have extra costs.
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                <span>What are your payment terms?</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9" />
+                </svg>
+                </div>
+                <div class="accordion-content">
+                50% upfront and 50% upon completion, unless otherwise agreed.
+                </div>
+            </div>
+            </div>
+                <!--Use Accordion on bootstrap-->
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="foot">
+        <div class="txt">ROCKWELL</div>
+        <button class="footin"><i class="fas fa-lock"></i></button> <!--icon here for shaun to access admin page-->
+    </div>
+
+    <script src="./JS/contact.js"></script>
+</body>
+</html>

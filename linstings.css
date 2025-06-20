@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar {
+    background-color: #121212;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    position: fixed;
+    height: 75px;
+    padding: 0 20px;
+    z-index: 1000;
+}
+.navlinks {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+}
+.navlinks ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    font-size: 22px;
+    font-weight: 400;
+}
+.navlinks ul li a{
+    text-decoration: none;
+    color: white;
+}
+a.active:hover {
+    text-decoration: underline;   
+    transition: 1s; 
+}
+.nav-btn {
+  padding: 7px 20px;          
+  border-radius: 15px;
+  background-color: white;
+  font-size: 20px;
+  font-weight: 600;           
+  cursor: pointer;
+  border: none;    
+  width: auto;
+  white-space: nowrap;           
+}
+.menu-toggle {
+    display: none;
+}
+.n{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+.logo-text {
+  font-size: 38px;
+  font-weight: 700;
+  color: #f0f0f0; 
+  letter-spacing: 6px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    padding: 10px 20px;
+  }
+  .menu-toggle {
+    display: block;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    z-index: 999;
+  }
+  .navlinks {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 0;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+  }
+  .navlinks.show {
+    max-height: 300px; 
+    padding: 20px 0;
+  }
+  .navlinks ul {
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+  }
+  .logo-text {
+    font-size: 24px;
+    letter-spacing: 3px;
+    text-align: left;
+  }
+}
+
+.lister{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 150vh;
+    padding-top: 150px;
+}
+.lister h1 {
+   font-size: 55px;
+   font-weight: 600;
+   text-align: center;
+   margin-bottom: 15px;
+}
+.lister p {
+   font-size: 25px;
+   text-align: center;
+   margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+    .lister{
+        padding-top: 100px;
+    }
+    .lister h1 {
+        font-size: 40px;
+        padding: 0px 11px;
+    }
+    .lister p {
+        font-size: 20px;
+        padding: 0px 15px;
+    }
+}
+.cta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0px;
+}
+span.break{
+    display:block;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-weight: 900;
+}
+.cta h1 {
+    font-size: 60px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.cta button{
+    padding: 10px 30px;
+    border-radius: 15px;
+    background-color: #121212;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+    margin-bottom: 70px;
+}
+.cta button:hover {
+   box-shadow: 0 4px 12px rgba(255, 221, 0, 0.9);
+   transition: 0.3s;
+}
+@media screen and (max-width: 768px) {
+    .cta h1 {
+        font-size: 35px;
+        padding: 0px 15px;
+    }
+    .break {
+        font-size: 50px;
+        padding: 0px 15px;
+    }
+    .cta button {
+        font-size: 25px;
+        padding: 10px 20px;
+        margin-bottom: 40px;
+    }
+}
+footer {
+    background-color: #121212;
+    color: #f0f0f0; 
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid #333; 
+}
+footer .txt {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.footer-btn {
+    background-color: transparent;
+    border: 2px solid #f0f0f0;
+    color: #f0f0f0;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.footer-btn:hover {
+    background-color: #f0f0f0;
+    color: #121212;
+}
